@@ -110,7 +110,7 @@ public class creategroup extends HttpServlet {
 			int result=ps.executeUpdate();
 			
 		
-			PreparedStatement ps1=con.prepareStatement("insert into groups (name) values(?)");
+			PreparedStatement ps1=con.prepareStatement("insert into groups (names) values(?)");
 			ps1.setString(1, groupname);
 			ps1.executeUpdate();
 			
